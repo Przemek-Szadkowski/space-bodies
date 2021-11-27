@@ -130,7 +130,7 @@ main {
   background-color: rgba(39, 123, 201, 0.1);
   border: 2px solid rgb(6, 32, 56);
   border-radius: 10px;
-  padding: 15px;
+  /* padding: 15px; */
   transition: 0.5s;
 }
 
@@ -242,12 +242,5 @@ main {
     height: 100%;
     padding: 2px 0;
     gap: 0.5%;
-  }
-  .record p {
-    margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
   }
 }

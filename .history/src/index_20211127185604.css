@@ -143,7 +143,7 @@ main {
 .record p {
   width: 100%;
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .record p.bodie-data {
@@ -242,12 +242,5 @@ main {
     height: 100%;
     padding: 2px 0;
     gap: 0.5%;
-  }
-  .record p {
-    margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
   }
 }

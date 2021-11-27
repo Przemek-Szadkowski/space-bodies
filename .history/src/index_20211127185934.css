@@ -142,7 +142,7 @@ main {
 
 .record p {
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -245,9 +245,5 @@ main {
   }
   .record p {
     margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
   }
 }

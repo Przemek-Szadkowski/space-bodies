@@ -245,9 +245,5 @@ main {
   }
   .record p {
     margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
   }
 }

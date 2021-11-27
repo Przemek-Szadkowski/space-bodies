@@ -243,11 +243,4 @@ main {
     padding: 2px 0;
     gap: 0.5%;
   }
-  .record p {
-    margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
-  }
 }

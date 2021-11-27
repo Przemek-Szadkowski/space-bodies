@@ -244,10 +244,6 @@ main {
     gap: 0.5%;
   }
   .record p {
-    margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
+    margin-bottom: 2px;
   }
 }

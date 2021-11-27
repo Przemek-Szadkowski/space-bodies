@@ -149,7 +149,7 @@ main {
 .record p.bodie-data {
   font-size: 1rem;
   color: #bbb;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 
 /*** SEARCH INPUT ***/
@@ -245,9 +245,5 @@ main {
   }
   .record p {
     margin-bottom: 3px;
-    font-size: 1.4rem;
-  }
-  .dashboard {
-    height: 70%;
   }
 }

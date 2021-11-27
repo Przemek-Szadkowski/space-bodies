@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/space-bodies/static/css/main.8fa16c75.chunk.css",
+    "main.js": "/space-bodies/static/js/main.86e54a73.chunk.js",
+    "main.js.map": "/space-bodies/static/js/main.86e54a73.chunk.js.map",
+    "runtime-main.js": "/space-bodies/static/js/runtime-main.f40f02c7.js",
+    "runtime-main.js.map": "/space-bodies/static/js/runtime-main.f40f02c7.js.map",
+    "static/js/2.7452bd93.chunk.js": "/space-bodies/static/js/2.7452bd93.chunk.js",
+    "static/js/2.7452bd93.chunk.js.map": "/space-bodies/static/js/2.7452bd93.chunk.js.map",
+    "index.html": "/space-bodies/index.html",
+    "static/css/main.8fa16c75.chunk.css.map": "/space-bodies/static/css/main.8fa16c75.chunk.css.map",
+    "static/js/2.7452bd93.chunk.js.LICENSE.txt": "/space-bodies/static/js/2.7452bd93.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/space-bodies/static/media/space-g1a6520065_1280.45fb8085.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f40f02c7.js",
+    "static/js/2.7452bd93.chunk.js",
+    "static/css/main.8fa16c75.chunk.css",
+    "static/js/main.86e54a73.chunk.js"
+  ]
+}

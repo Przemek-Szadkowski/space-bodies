@@ -176,7 +176,7 @@ main {
   border: 2px solid rgb(202, 32, 32);
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(155, 11, 11);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   color: rgba(202, 32, 32, 0.7);
   font-size: 1.2rem;
   padding: 0 10px;
@@ -221,14 +221,5 @@ main {
   .search {
     grid-area: 2/2/3/3;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 648px) {
-  :root {
-    font-size: 10px;
-  }
-  .record {
-    padding: 5px;
   }
 }

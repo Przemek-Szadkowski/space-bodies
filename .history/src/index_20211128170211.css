@@ -10,14 +10,12 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
-  margin: 0 auto;
   background-image: url(./images/space-g1a6520065_1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   overflow: hidden;
   transition: 1s;
 }
@@ -118,7 +116,7 @@ main {
   padding: 5px 0;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill);
   grid-template-rows: repeat(auto-fill);
   gap: 1%;
 }

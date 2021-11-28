@@ -16,8 +16,8 @@ body {
   background-image: url(./images/space-g1a6520065_1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover
+  background-attachment: scroll;
   overflow: hidden;
   transition: 1s;
 }

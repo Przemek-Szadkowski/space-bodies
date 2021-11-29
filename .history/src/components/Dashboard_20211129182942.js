@@ -9,7 +9,7 @@ export default function Dashboard(props) {
                     ? "dashboard__btn dashboard__btn__main dashboard__btn__main--active"
                     :  "dashboard__btn dashboard__btn__main"
                 }
-                onClick={props.arePlanets ? props.showPlanets : null}>
+                onClick={props.setArePlanets(true)}>
                     All bodies
             </button>
             <button
@@ -18,7 +18,7 @@ export default function Dashboard(props) {
                     ? "dashboard__btn dashboard__btn__main dashboard__btn__main__planets dashboard__btn__main__planets--active"
                     : "dashboard__btn dashboard__btn__main dashboard__btn__main__planets"
                 }
-                onClick={props.arePlanets ? null : props.showPlanets}>
+                onClick={props.setArePlanets(false)}>
                     Planets
             </button>
             <button className="dashboard__btn dashboard__btn__start" onClick={props.toggleSearchInput}>Search</button>

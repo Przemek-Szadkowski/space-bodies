@@ -55,7 +55,7 @@ function App() {
 
   return (
     <main>
-      {isSearchInput && <SearchInput setSearchingBodies={setSearchingBodies}/>}
+      {isSearchInput ? <SearchInput setSearchingBodies={setSearchingBodies}/> : null}
       <Dashboard arePlanets={arePlanets} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
       <BodiesTable searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>
     </main>

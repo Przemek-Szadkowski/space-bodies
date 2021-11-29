@@ -40,9 +40,13 @@ function App() {
     setBodies(bodiesData);
   }
 
-  const showPlanets = () => {
-    setArePlanets(!arePlanets);
-  }
+  // const showPlanets = () => {
+  //   setArePlanets(true);
+  // }
+
+  // const showAllBodies = () => {
+  //   setArePlanets(false);
+  // }
 
   const toggleSearchInput = () => {
     setIsSearchInput(!isSearchInput);
@@ -55,8 +59,8 @@ function App() {
 
   return (
     <main>
-      {isSearchInput && <SearchInput setSearchingBodies={setSearchingBodies}/>}
-      <Dashboard arePlanets={arePlanets} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
+      {isSearchInput ? <SearchInput setSearchingBodies={setSearchingBodies}/> : null}
+      <Dashboard arePlanets={arePlanets} setArePlanets={setArePlanets} toggleSearchInput={toggleSearchInput}/>
       <BodiesTable searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>
     </main>
   );

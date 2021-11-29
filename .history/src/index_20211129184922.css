@@ -262,7 +262,7 @@ main {
 
 @media screen and (max-width: 340px) {
   .record p {
-    font-size: 1.2rem;
+    font-size: rem;
   }
   .record p.bodie-data {
     font-size: 0.8rem;

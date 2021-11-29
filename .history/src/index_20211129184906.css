@@ -118,7 +118,7 @@ main {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(max-content, 25%));
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 23%));
   gap: 1%;
 }
 
@@ -262,7 +262,7 @@ main {
 
 @media screen and (max-width: 340px) {
   .record p {
-    font-size: 1.2rem;
+    font-size: rem;
   }
   .record p.bodie-data {
     font-size: 0.8rem;

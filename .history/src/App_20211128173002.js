@@ -1,38 +1,23 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useState, useEffect } from 'react';
 import BodiesTable from "./components/BodiesTable";
 import Dashboard from "./components/Dashboard";
 import SearchInput from './components/SearchInput';
 
 const ENDPOINT = 'https://api.le-systeme-solaire.net/rest/bodies/';
 
-// const reducer = (state, action) => {
-//   switch(action.type) {
-//     case 'TOGGLE_PLANETS':
-//       return {...state, arePlanetsVisible: !state.arePlanetsVisible};
-//     case 'SHOW_SEARCH_INPUT':
-//       return {...state, isSearchInputVisible: true};
-//     case 'SEARCH_WORD':
-//       const newSearchingWord = action.payload;
-//       return {...state, searchingWord: newSearchingWord};
-//     default:
-//       break;
-//   }
-// };
-
-// const defaultState = {
-//   searchingWord: '',
-//   arePlanetsVisible: false,
-//   isSearchInputVisible: false,
-// };
-
 function App() {
-
-  // const [state, dispatch] = useReducer(reducer, defaultState);
 
   const [bodies, setBodies] = useState([]);
   const [arePlanets, setArePlanets] = useState(false);
   const [isSearchInput, setIsSearchInput] = useState(false);
   const [searchingBodies, setSearchingBodies] = useState('');
+
+  // const defaultState = {
+  //   bodies: [],
+  //   searchingWord: '',
+  //   arePlanetsVisible: false,
+  //   isSearchInputVisible: false,
+  // };
 
   const getData = async () => {
     const response = await fetch(ENDPOINT);
@@ -41,7 +26,11 @@ function App() {
   }
 
   const showPlanets = () => {
-    setArePlanets(!arePlanets);
+    setArePlanets(true);
+  }
+
+  const showAllBodies = () => {
+    setArePlanets(false);
   }
 
   const toggleSearchInput = () => {
@@ -55,8 +44,8 @@ function App() {
 
   return (
     <main>
-      {isSearchInput && <SearchInput setSearchingBodies={setSearchingBodies}/>}
-      <Dashboard arePlanets={arePlanets} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
+      {isSearchInput ? <SearchInput setSearchingBodies={setSearchingBodies}/> : null}
+      <Dashboard arePlanets={arePlanets} showPlanets={showPlanets} showAllBodies={showAllBodies} toggleSearchInput={toggleSearchInput}/>
       <BodiesTable searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>
     </main>
   );

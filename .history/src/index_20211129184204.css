@@ -150,7 +150,7 @@ main {
 .record p.bodie-data {
   font-size: 1rem;
   color: #bbb;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 
 /*** SEARCH INPUT ***/
@@ -230,10 +230,7 @@ main {
     font-size: 10px;
   }
   .record {
-    padding: 3px;
-  }
-  .dashboard__btn {
-    font-size: 1.4rem;
+    padding: 5px;
   }
 }
 
@@ -249,7 +246,7 @@ main {
   }
   .record p {
     margin-bottom: 3px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .dashboard {
     height: 70%;
@@ -257,14 +254,5 @@ main {
   .search {
     height: 70%;
     align-self: end;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .record p {
-    font-size: 1.2rem;
-  }
-  .record p.bodie-data {
-    font-size: 0.8rem;
   }
 }

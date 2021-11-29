@@ -230,10 +230,7 @@ main {
     font-size: 10px;
   }
   .record {
-    padding: 3px;
-  }
-  .dashboard__btn {
-    font-size: 1.4rem;
+    padding: 5px;
   }
 }
 
@@ -248,8 +245,8 @@ main {
     gap: 0.5%;
   }
   .record p {
-    margin-bottom: 3px;
-    font-size: 1.4rem;
+    /* margin-bottom: 3px; */
+    font-size: 1.6rem;
   }
   .dashboard {
     height: 70%;
@@ -257,14 +254,5 @@ main {
   .search {
     height: 70%;
     align-self: end;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .record p {
-    font-size: 1.2rem;
-  }
-  .record p.bodie-data {
-    font-size: 0.8rem;
   }
 }

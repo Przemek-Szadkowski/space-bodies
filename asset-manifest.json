@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/space-bodies/static/css/main.c963a205.chunk.css",
-    "main.js": "/space-bodies/static/js/main.44dfc631.chunk.js",
-    "main.js.map": "/space-bodies/static/js/main.44dfc631.chunk.js.map",
+    "main.css": "/space-bodies/static/css/main.e5600a69.chunk.css",
+    "main.js": "/space-bodies/static/js/main.d6f90f6d.chunk.js",
+    "main.js.map": "/space-bodies/static/js/main.d6f90f6d.chunk.js.map",
     "runtime-main.js": "/space-bodies/static/js/runtime-main.f40f02c7.js",
     "runtime-main.js.map": "/space-bodies/static/js/runtime-main.f40f02c7.js.map",
-    "static/js/2.7452bd93.chunk.js": "/space-bodies/static/js/2.7452bd93.chunk.js",
-    "static/js/2.7452bd93.chunk.js.map": "/space-bodies/static/js/2.7452bd93.chunk.js.map",
+    "static/js/2.470f93bf.chunk.js": "/space-bodies/static/js/2.470f93bf.chunk.js",
+    "static/js/2.470f93bf.chunk.js.map": "/space-bodies/static/js/2.470f93bf.chunk.js.map",
     "index.html": "/space-bodies/index.html",
-    "static/css/main.c963a205.chunk.css.map": "/space-bodies/static/css/main.c963a205.chunk.css.map",
-    "static/js/2.7452bd93.chunk.js.LICENSE.txt": "/space-bodies/static/js/2.7452bd93.chunk.js.LICENSE.txt",
+    "static/css/main.e5600a69.chunk.css.map": "/space-bodies/static/css/main.e5600a69.chunk.css.map",
+    "static/js/2.470f93bf.chunk.js.LICENSE.txt": "/space-bodies/static/js/2.470f93bf.chunk.js.LICENSE.txt",
     "static/media/index.css": "/space-bodies/static/media/space-g1a6520065_1280.45fb8085.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f40f02c7.js",
-    "static/js/2.7452bd93.chunk.js",
-    "static/css/main.c963a205.chunk.css",
-    "static/js/main.44dfc631.chunk.js"
+    "static/js/2.470f93bf.chunk.js",
+    "static/css/main.e5600a69.chunk.css",
+    "static/js/main.d6f90f6d.chunk.js"
   ]
 }

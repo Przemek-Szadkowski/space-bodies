@@ -1,0 +1,331 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Share Tech", sans-serif;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0b1c26;
+  background-image: url(./images/space-g1a6520065_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/***DASHBOARD ***/
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+  align-self: end;
+  justify-self: start;
+  grid-area: 2/1/3/2;
+  height: 200px;
+  width: 80%;
+  border: 2px solid rgb(202, 32, 32);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(155, 11, 11);
+}
+
+.dashboard__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #bbb;
+  font-size: 1.8rem;
+  border: 1px solid rgb(202, 32, 32);
+  box-shadow: 0 0 3px rgb(155, 11, 11);
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  background-color: rgba(39, 123, 201, 0.1);
+}
+
+.dashboard__btn__main__planets--active,
+.dashboard__btn__main--active {
+  color: rgba(202, 32, 32, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dashboard__btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgb(155, 11, 11);
+  color: rgba(202, 32, 32, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dashboard__btn__main:nth-child(1) {
+  grid-column: 1/3;
+}
+
+.dashboard__btn__main:nth-child(2) {
+  grid-column: 3/5;
+}
+
+.dashboard__btn__start {
+  grid-column: 1/5;
+}
+
+/*** MAIN TEXT AREA ***/
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1/2/3/3;
+  height: 100%;
+  width: 100%;
+  border: 3px solid rgb(202, 32, 32);
+  box-shadow: 0 0 3px rgb(155, 11, 11);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.text::-webkit-scrollbar {
+  display: none; /* Chrome, Opera */
+}
+
+.mainList {
+  position: relative;
+  width: 99%;
+  height: 100%;
+  padding: 5px 0;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 25%));
+  gap: 1%;
+}
+
+.record {
+  color: rgba(202, 32, 32, 0.7);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgba(39, 123, 201, 0.1);
+  border: 2px solid rgb(6, 32, 56);
+  border-radius: 10px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.record.active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  background-color: rgba(8, 57, 104, 0.8);
+  border: 2px solid #222;
+  align-items: center;
+  padding: 5%;
+  box-shadow: 0px 0px 15px #fff;
+}
+
+.record.active p {
+  font-size: 7rem;
+  filter: drop-shadow(3px 3px 0px black);
+}
+
+.record.active p.bodie-data {
+  font-size: 3rem;
+  filter: drop-shadow(2px 2px 0px black);
+}
+
+.record.active:hover {
+  background-color: rgba(8, 57, 104, 0.8);
+}
+
+.record:hover {
+  cursor: pointer;
+  background-color: rgba(39, 123, 201, 0.3);
+  color: rgba(202, 32, 32, 0.1);
+}
+
+.record p {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.record p.bodie-data {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 0px;
+}
+
+/*** SEARCH INPUT ***/
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  align-self: start;
+  grid-area: 1/1/2/2;
+  height: 200px;
+  width: 80%;
+  border: 2px solid rgb(202, 32, 32);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(155, 11, 11);
+  background-color: rgba(39, 123, 201, 0.25);
+}
+
+.search input {
+  height: 50%;
+  width: 80%;
+  border: 2px solid rgb(202, 32, 32);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(155, 11, 11);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(202, 32, 32, 0.7);
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.search label {
+  height: 30%;
+  align-self: end;
+  color: #bbb;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 5%;
+}
+
+.search input:focus {
+  outline: none;
+  border: 2px solid rgb(39, 123, 201);
+  box-shadow: 0 0 10px rgb(39, 123, 201);
+}
+
+/*** loader ***/
+
+.loader_left {
+  height: 150px;
+  width: 150px;
+  border: 3px solid #a9b9c9;
+  filter: blur(3px);
+  box-shadow: 5px 5px 5px rgb(194, 162, 75), -5px -5px 5px rgb(194, 162, 75),
+    10px 10px 10px rgb(69, 155, 235), -10px -10px 10px rgb(69, 155, 235);
+  border-radius: 50%;
+  transform: skewX(45deg);
+  animation: rotatePlanet linear 10s infinite;
+}
+
+.loading {
+  font-size: 3rem;
+  color: #bbb;
+  position: absolute;
+}
+
+/*** media queries ***/
+
+@media screen and (max-width: 1370px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 10px;
+  }
+  .text {
+    grid-area: 1/1/2/3;
+  }
+  .dashboard {
+    grid-area: 2/1/3/2;
+    width: 100%;
+  }
+  .search {
+    grid-area: 2/2/3/3;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  :root {
+    font-size: 10px;
+  }
+  .record {
+    padding: 3px;
+  }
+  .dashboard__btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 10px;
+  }
+  .mainList {
+    width: 100%;
+    height: 100%;
+    padding: 2px 0;
+    gap: 0.5%;
+  }
+  .record p {
+    margin-bottom: 3px;
+    font-size: 1.4rem;
+  }
+  .dashboard {
+    height: 70%;
+  }
+  .search {
+    height: 70%;
+    align-self: end;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .record p {
+    font-size: 1.2rem;
+  }
+  .record p.bodie-data {
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    transform: skewX(45deg) rotate(0);
+    width: 50%;
+  }
+  100% {
+    transform: skewX(45deg) rotate(360deg);
+    width: 50%;
+  }
+}

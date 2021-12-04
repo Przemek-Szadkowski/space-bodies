@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Dashboard(props) {
 
+    const handleABC = () => {
+        props.setSearchingBodies(props.bodies.sort((a,b) => a - b));
+    }
+
     return (
         <div className="dashboard">
             <button
@@ -10,7 +14,7 @@ export default function Dashboard(props) {
                     ? "dashboard__btn dashboard__btn__main dashboard__btn__main--active"
                     :  "dashboard__btn dashboard__btn__main"
                 }
-                onClick={props.showBodies}>
+                onClick={props.arePlanets ? props.showPlanets : null}>
                     All bodies
             </button>
             <button
@@ -19,11 +23,11 @@ export default function Dashboard(props) {
                     ? "dashboard__btn dashboard__btn__main dashboard__btn__main__planets dashboard__btn__main__planets--active"
                     : "dashboard__btn dashboard__btn__main dashboard__btn__main__planets"
                 }
-                onClick={props.showPlanets}>
+                onClick={props.arePlanets ? null : props.showPlanets}>
                     Planets
             </button>
             <button className="dashboard__btn dashboard__btn__start" onClick={props.toggleSearchInput}>Search</button>
-            <button className="dashboard__btn dashboard__btn__options">1</button>
+            <button className="dashboard__btn dashboard__btn__options" onClick={handleABC}>1</button>
             <button className="dashboard__btn dashboard__btn__options">2</button>
             <button className="dashboard__btn dashboard__btn__options">3</button>
             <button className="dashboard__btn dashboard__btn__options">4</button>

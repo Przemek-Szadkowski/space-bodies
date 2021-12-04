@@ -180,14 +180,14 @@ main {
 
 .record.active p {
   font-size: 10rem;
-  filter: drop-shadow(4px 4px 0px #111);
+  filter: drop-shadow(3px 3px 0px black);
   color: rgba(202, 32, 32, 0.7);
   text-align: center;
 }
 
 .record.active p.bodie-data {
   font-size: 4rem;
-  filter: drop-shadow(4px 4px 0px #111);
+  filter: drop-shadow(2px 2px 0px black);
   color: #aaa;
   text-align: center;
 }
@@ -198,8 +198,7 @@ main {
 
 .record.active .unit {
   display: inline;
-  color: rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(2px 2px 0px #222);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /*** SEARCH INPUT ***/
@@ -273,15 +272,6 @@ main {
   :root {
     font-size: 14px;
   }
-  .record.active {
-    padding-bottom: 10%;
-  }
-  .record.active p {
-    font-size: 8rem;
-  }
-  .record.active p.bodie-data {
-    font-size: 4rem;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -302,13 +292,7 @@ main {
     width: 100%;
   }
   .record.active {
-    padding-bottom: 20%;
-  }
-  .record.active p {
-    font-size: 7rem;
-  }
-  .record.active p.bodie-data {
-    font-size: 3.5rem;
+    padding-bottom: 30%;
   }
 }
 
@@ -349,10 +333,10 @@ main {
     align-self: end;
   }
   .record.active p {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .record.active p.bodie-data {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -367,8 +351,7 @@ main {
     font-size: 4.5rem;
   }
   .record.active p.bodie-data {
-    font-size: 2rem;
-    padding-bottom: 3px;
+    font-size: 2.5rem;
   }
 }
 

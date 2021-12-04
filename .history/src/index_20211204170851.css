@@ -136,28 +136,6 @@ main {
   transition: 0.5s;
 }
 
-.record:hover {
-  cursor: pointer;
-  background-color: rgba(39, 123, 201, 0.3);
-  color: rgba(202, 32, 32, 0.7);
-}
-
-.record p {
-  width: 100%;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.record p.bodie-data {
-  font-size: 1rem;
-  color: #bbb;
-  margin-bottom: 0px;
-}
-
-.unit {
-  display: none;
-}
-
 .record.active {
   position: absolute;
   top: 0%;
@@ -180,14 +158,14 @@ main {
 
 .record.active p {
   font-size: 10rem;
-  filter: drop-shadow(4px 4px 0px #111);
+  filter: drop-shadow(3px 3px 0px black);
   color: rgba(202, 32, 32, 0.7);
   text-align: center;
 }
 
 .record.active p.bodie-data {
   font-size: 4rem;
-  filter: drop-shadow(4px 4px 0px #111);
+  filter: drop-shadow(2px 2px 0px black);
   color: #aaa;
   text-align: center;
 }
@@ -196,10 +174,22 @@ main {
   background-color: rgba(8, 57, 104, 0.8);
 }
 
-.record.active .unit {
-  display: inline;
-  color: rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(2px 2px 0px #222);
+.record:hover {
+  cursor: pointer;
+  background-color: rgba(39, 123, 201, 0.3);
+  color: rgba(202, 32, 32, 0.7);
+}
+
+.record p {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.record p.bodie-data {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 0px;
 }
 
 /*** SEARCH INPUT ***/
@@ -273,15 +263,6 @@ main {
   :root {
     font-size: 14px;
   }
-  .record.active {
-    padding-bottom: 10%;
-  }
-  .record.active p {
-    font-size: 8rem;
-  }
-  .record.active p.bodie-data {
-    font-size: 4rem;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -302,13 +283,7 @@ main {
     width: 100%;
   }
   .record.active {
-    padding-bottom: 20%;
-  }
-  .record.active p {
-    font-size: 7rem;
-  }
-  .record.active p.bodie-data {
-    font-size: 3.5rem;
+    padding: 10%;
   }
 }
 
@@ -321,6 +296,9 @@ main {
   }
   .dashboard__btn {
     font-size: 1.4rem;
+  }
+  .record.active {
+    padding: 17%;
   }
   .record.active p {
     font-size: 7rem;
@@ -362,13 +340,6 @@ main {
   }
   .record p.bodie-data {
     font-size: 0.8rem;
-  }
-  .record.active p {
-    font-size: 4.5rem;
-  }
-  .record.active p.bodie-data {
-    font-size: 2rem;
-    padding-bottom: 3px;
   }
 }
 

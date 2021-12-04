@@ -302,7 +302,7 @@ main {
     width: 100%;
   }
   .record.active {
-    padding-bottom: 20%;
+    padding-bottom: 30%;
   }
   .record.active p {
     font-size: 7rem;

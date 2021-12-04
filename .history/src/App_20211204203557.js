@@ -17,6 +17,7 @@ function App() {
     const response = await fetch(ENDPOINT);
     const bodiesData = await response.json();
     setBodies(bodiesData);
+    setSortedBodies(bodiesData);
     setLoading(false);
   }
 
@@ -37,7 +38,7 @@ function App() {
   return (
     <main>
       {isSearchInput && <SearchInput setSearchingBodies={setSearchingBodies}/>}
-      <Dashboard arePlanets={arePlanets} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
+      <Dashboard arePlanets={arePlanets} setIsSorted={setIsSorted} setSortedBodies={setSortedBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
       {<BodiesTable loading={loading} searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>}
     </main>
   );

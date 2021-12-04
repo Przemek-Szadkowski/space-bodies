@@ -273,15 +273,6 @@ main {
   :root {
     font-size: 14px;
   }
-  .record.active {
-    padding-bottom: 10%;
-  }
-  .record.active p {
-    font-size: 8rem;
-  }
-  .record.active p.bodie-data {
-    font-size: 4rem;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -302,13 +293,13 @@ main {
     width: 100%;
   }
   .record.active {
-    padding-bottom: 20%;
+    padding-bottom: 30%;
   }
   .record.active p {
     font-size: 7rem;
   }
   .record.active p.bodie-data {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 

@@ -29,7 +29,6 @@ function App() {
     if(isSearchInput) setSearchingBodies('');
   }
 
-
   useEffect(() => {
       getData();
   }, []);
@@ -38,7 +37,7 @@ function App() {
     <main>
       {isSearchInput && <SearchInput setSearchingBodies={setSearchingBodies}/>}
       <Dashboard arePlanets={arePlanets} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
-      {<BodiesTable loading={loading} searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>}
+      <BodiesTable loading={loading} searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>
     </main>
   );
 }

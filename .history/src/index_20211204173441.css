@@ -277,10 +277,10 @@ main {
     padding-bottom: 10%;
   }
   .record.active p {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .record.active p.bodie-data {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -302,7 +302,7 @@ main {
     width: 100%;
   }
   .record.active {
-    padding-bottom: 20%;
+    padding-bottom: 30%;
   }
   .record.active p {
     font-size: 7rem;

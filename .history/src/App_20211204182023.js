@@ -12,6 +12,8 @@ function App() {
   const [isSearchInput, setIsSearchInput] = useState(false);
   const [searchingBodies, setSearchingBodies] = useState('');
   const [loading, setLoading] = useState(true);
+  const [sortType, setSortType] = useState('');
+  const [sortedBodies, setSortedBodies] = useState([]);
 
   const getData = async () => {
     const response = await fetch(ENDPOINT);
@@ -29,7 +31,6 @@ function App() {
     if(isSearchInput) setSearchingBodies('');
   }
 
-
   useEffect(() => {
       getData();
   }, []);
@@ -37,8 +38,8 @@ function App() {
   return (
     <main>
       {isSearchInput && <SearchInput setSearchingBodies={setSearchingBodies}/>}
-      <Dashboard arePlanets={arePlanets} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
-      {<BodiesTable loading={loading} searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>}
+      <Dashboard arePlanets={arePlanets} setSortType={setSortType} showPlanets={showPlanets} toggleSearchInput={toggleSearchInput}/>
+      <BodiesTable loading={loading} searchingBodies={searchingBodies} bodies={arePlanets ? bodies.bodies.filter(body => body.isPlanet) : bodies.bodies}/>
     </main>
   );
 }

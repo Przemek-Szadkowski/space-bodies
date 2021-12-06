@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-bodies/static/css/main.d9922cbd.chunk.css",
+    "main.css": "/space-bodies/static/css/main.4b058ad6.chunk.css",
     "main.js": "/space-bodies/static/js/main.27cda037.chunk.js",
     "main.js.map": "/space-bodies/static/js/main.27cda037.chunk.js.map",
     "runtime-main.js": "/space-bodies/static/js/runtime-main.f40f02c7.js",
@@ -8,14 +8,14 @@
     "static/js/2.470f93bf.chunk.js": "/space-bodies/static/js/2.470f93bf.chunk.js",
     "static/js/2.470f93bf.chunk.js.map": "/space-bodies/static/js/2.470f93bf.chunk.js.map",
     "index.html": "/space-bodies/index.html",
-    "static/css/main.d9922cbd.chunk.css.map": "/space-bodies/static/css/main.d9922cbd.chunk.css.map",
+    "static/css/main.4b058ad6.chunk.css.map": "/space-bodies/static/css/main.4b058ad6.chunk.css.map",
     "static/js/2.470f93bf.chunk.js.LICENSE.txt": "/space-bodies/static/js/2.470f93bf.chunk.js.LICENSE.txt",
     "static/media/index.css": "/space-bodies/static/media/space-g1a6520065_1280.45fb8085.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f40f02c7.js",
     "static/js/2.470f93bf.chunk.js",
-    "static/css/main.d9922cbd.chunk.css",
+    "static/css/main.4b058ad6.chunk.css",
     "static/js/main.27cda037.chunk.js"
   ]
 }

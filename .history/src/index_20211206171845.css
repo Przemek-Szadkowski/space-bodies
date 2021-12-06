@@ -115,7 +115,7 @@ main {
 
 .progress_bar {
   content: "";
-  position: fixed;
+  position: sticky;
   right: 0%;
   top: 0%;
   width: 5px;

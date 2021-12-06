@@ -113,15 +113,6 @@ main {
   display: none; /* Chrome, Opera */
 }
 
-.progress_bar {
-  content: "";
-  position: fixed;
-  right: 0%;
-  top: 0%;
-  width: 5px;
-  background-color: #f00;
-}
-
 .mainList {
   width: 99%;
   height: 100%;
@@ -171,9 +162,8 @@ main {
   position: absolute;
   top: 0%;
   left: 0%;
-  bottom: 0%;
-  right: 0%;
-  height: 100vh;
+  bottom: 100%;
+  right: 100%;
   background-color: rgba(8, 57, 104, 0.8);
   background-image: linear-gradient(
     45deg,

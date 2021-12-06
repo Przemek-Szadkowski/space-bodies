@@ -22,8 +22,8 @@ export default function BodiesTable(props) {
 
     return (
         <>
+            <div className="progress_bar" ref={refProgressBar}></div>
             <div className="text" onScroll={handleScroll} ref={refText}>
-                <div className="progress_bar" ref={refProgressBar}></div>
                 {props.loading ? <Loader/> : <div className="mainList">
                 {props.searchingBodies
                 ? findSearchingBodies(props.searchingBodies, props.bodies).map( bodie => {

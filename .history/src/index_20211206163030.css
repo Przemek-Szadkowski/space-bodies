@@ -113,12 +113,13 @@ main {
   display: none; /* Chrome, Opera */
 }
 
-.progress_bar {
+.text::after {
   content: "";
-  position: fixed;
+  position: absolute;
   right: 0%;
   top: 0%;
-  width: 5px;
+  width: 10px;
+  height: 20px;
   background-color: #f00;
 }
 

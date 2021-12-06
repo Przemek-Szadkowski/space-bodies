@@ -113,15 +113,6 @@ main {
   display: none; /* Chrome, Opera */
 }
 
-.progress_bar {
-  content: "";
-  position: fixed;
-  right: 0%;
-  top: 0%;
-  width: 5px;
-  background-color: #f00;
-}
-
 .mainList {
   width: 99%;
   height: 100%;

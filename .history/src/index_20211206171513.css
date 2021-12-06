@@ -117,8 +117,8 @@ main {
   content: "";
   position: fixed;
   right: 0%;
+  left: 98%;
   top: 0%;
-  width: 5px;
   background-color: #f00;
 }
 

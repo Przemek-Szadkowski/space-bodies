@@ -15,15 +15,15 @@ export default function BodiesTable(props) {
     };
 
     const handleScroll = () => {
-        const height = 100 - (Math.round(((refText.current.scrollTop) * 100) / (refText.current.scrollHeight)));
+        const height = 100 - (Math.round(((refText.current.scrollTop + refText.current.clientHeight) * 100) / (refText.current.scrollHeight)));
         refProgressBar.current.style.bottom = `${height}%`;
     
     };
 
     return (
         <>
+            <div className="progress_bar" ref={refProgressBar}></div>
             <div className="text" onScroll={handleScroll} ref={refText}>
-                <div className="progress_bar" ref={refProgressBar}></div>
                 {props.loading ? <Loader/> : <div className="mainList">
                 {props.searchingBodies
                 ? findSearchingBodies(props.searchingBodies, props.bodies).map( bodie => {

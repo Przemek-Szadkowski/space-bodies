@@ -94,6 +94,7 @@ main {
 /*** MAIN TEXT AREA ***/
 
 .text {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,8 +118,8 @@ main {
   content: "";
   position: fixed;
   right: 0%;
+  left: 95%;
   top: 0%;
-  width: 5px;
   background-color: #f00;
 }
 

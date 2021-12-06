@@ -114,13 +114,15 @@ main {
 }
 
 .progress_bar {
-  /* content: ""; */
-  position: fixed;
+  position: absolute;
   right: 0%;
-  top: 0%;
-  width: 5px;
-  margin-top: 2%;
-  background-color: #f00;
+  top: 4%;
+  width: 15px;
+  height: 15px;
+  margin-right: 1%;
+  border-radius: 50%;
+  background-image: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+  box-shadow: 5px 5px 20px white;
 }
 
 .mainList {

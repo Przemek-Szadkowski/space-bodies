@@ -94,6 +94,7 @@ main {
 /*** MAIN TEXT AREA ***/
 
 .text {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,12 +115,11 @@ main {
 }
 
 .progress_bar {
-  /* content: ""; */
-  position: fixed;
+  content: "";
+  position: absolute;
   right: 0%;
   top: 0%;
-  width: 5px;
-  margin-top: 2%;
+  width: 15px;
   background-color: #f00;
 }
 

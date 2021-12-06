@@ -15,8 +15,11 @@ export default function BodiesTable(props) {
     };
 
     const handleScroll = () => {
-        const height = Math.round(((refText.current.scrollTop) * 100) / (refText.current.scrollHeight));
-        refProgressBar.current.style.height = `${height}vh`;
+        console.log(refText);
+        const height = 100 - (Math.round((refText.current.scrollTop * 100) / (refText.current.scrollHeight)));
+        console.log(height);
+        refProgressBar.current.style.bottom = `${height}%`;
+    
     };
 
     return (

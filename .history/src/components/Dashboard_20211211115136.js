@@ -1,5 +1,4 @@
 import React from 'react'
-import Bar from './Bar'
 
 export default function Dashboard(props) {
 
@@ -28,7 +27,6 @@ export default function Dashboard(props) {
             <button className="dashboard__btn dashboard__btn__options">2</button>
             <button className="dashboard__btn dashboard__btn__options">3</button>
             <button className="dashboard__btn dashboard__btn__options">4</button> */}
-            <Bar/>
         </div>
     )
 }

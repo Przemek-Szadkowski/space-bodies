@@ -92,24 +92,14 @@ main {
 }
 
 .bar {
-  position: relative;
   grid-area: 3/1/4/5;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #ccc;
-  font-size: 2rem;
-  text-transform: uppercase;
-  overflow: hidden;
+  width: 100%;
 }
 
 .bar p {
-  height: 2.5rem;
-  line-height: 2.5rem;
-  text-align: center;
-  transform: translateX(50%);
-  animation: moveText linear 25s infinite;
-  white-space: nowrap;
+  width: 100%;
 }
 
 /*** MAIN TEXT AREA ***/
@@ -412,14 +402,5 @@ main {
   100% {
     transform: skewX(45deg) rotate(360deg);
     width: 50%;
-  }
-}
-
-@keyframes moveText {
-  0% {
-    transform: translateX(60%);
-  }
-  100% {
-    transform: translateX(-60%);
   }
 }

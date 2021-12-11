@@ -107,6 +107,8 @@ main {
   height: 2.5rem;
   line-height: 2.5rem;
   text-align: center;
+  /* background-color: rgba(202, 32, 32, 0.9); */
+  /* overflow: hidden; */
   transform: translateX(50%);
   animation: moveText linear 25s infinite;
   white-space: nowrap;
@@ -417,7 +419,7 @@ main {
 
 @keyframes moveText {
   0% {
-    transform: translateX(60%);
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(-60%);

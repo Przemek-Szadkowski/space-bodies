@@ -100,16 +100,15 @@ main {
   color: #ccc;
   font-size: 2rem;
   text-transform: uppercase;
-  overflow: hidden;
 }
 
 .bar p {
+  position: absolute;
   height: 2.5rem;
   line-height: 2.5rem;
   text-align: center;
-  transform: translateX(50%);
-  animation: moveText linear 25s infinite;
-  white-space: nowrap;
+  background-color: rgba(202, 32, 32, 0.9);
+  overflow: hidden;
 }
 
 /*** MAIN TEXT AREA ***/
@@ -417,9 +416,7 @@ main {
 
 @keyframes moveText {
   0% {
-    transform: translateX(60%);
   }
   100% {
-    transform: translateX(-60%);
   }
 }
